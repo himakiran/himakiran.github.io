@@ -1,0 +1,1073 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0039)http://www.9tut.com/subnetting-tutorial -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="mdl-js"><head profile="http://gmpg.org/xfn/11"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+		
+	<title>CCNA Training » Subnetting Tutorial – Subnetting Made Easy</title>
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="http://www.9tut.com/feed">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://www.9tut.com/comments/feed">
+	<link rel="pingback" href="http://www.9tut.com/xmlrpc.php">
+        <link rel="shortcut icon" href="http://www.9tut.com/favicon.ico"> 
+	<!-- style START -->
+	<!-- default style -->
+	<style type="text/css" media="screen">@import url( http://www.9tut.com/wp-content/themes/inove/style.css );</style>
+	<!-- for translations -->
+		<!--[if IE]>
+		<link rel="stylesheet" href="http://www.9tut.com/wp-content/themes/inove/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+	<!-- style END -->
+
+	<!-- script START -->
+	<script type="text/javascript" async="" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/ga.js"></script><script type="text/javascript" async="" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/ga.js"></script><script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/base.js"></script>
+	<script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/menu.js"></script>
+	<!-- script END -->
+
+	<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="CCNA Training » Subnetting Tutorial – Subnetting Made Easy Comments Feed" href="http://www.9tut.com/subnetting-tutorial/feed">
+<script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/jquery.js"></script>
+<script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/jquery-migrate.min.js"></script>
+<link rel="https://api.w.org/" href="http://www.9tut.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.9tut.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.9tut.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Frame Relay Tutorial" href="http://www.9tut.com/frame-relay-tutorial">
+<link rel="next" title="CCNA – Protocols &amp; Services" href="http://www.9tut.com/ccna-protocols-services">
+<meta name="generator" content="WordPress 4.7.2">
+<link rel="canonical" href="http://www.9tut.com/subnetting-tutorial">
+<link rel="shortlink" href="http://www.9tut.com/?p=850">
+<link rel="alternate" type="application/json+oembed" href="http://www.9tut.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.9tut.com%2Fsubnetting-tutorial">
+<link rel="alternate" type="text/xml+oembed" href="http://www.9tut.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.9tut.com%2Fsubnetting-tutorial&amp;format=xml">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2141052-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+
+<body>
+<!-- wrap START -->
+<div id="wrap">
+
+<!-- container START -->
+<div id="container">
+
+<!-- header START -->
+
+<link rel="shortcut icon" href="http://www.9tut.com/wp-content/themes/inove/favicon.ico">
+
+<div id="header">
+<a href="http://www.9tut.com/"><img width="207" height="80" border="0" alt="logo" title="logo" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/header.jpg"></a>
+<!-- searchbox START -->
+
+	<div id="searchbox">
+
+		
+			<form action="http://www.9tut.com/" method="get">
+
+				<div class="content">
+
+					<input type="text" class="textfield searchtip" name="s" size="24" value="">
+
+					<input type="submit" class="button" value="">
+
+				</div>
+
+			</form>
+
+		
+	</div>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+	var searchbox = MGJS.$("searchbox");
+
+	var searchtxt = MGJS.getElementsByClassName("textfield", "input", searchbox)[0];
+
+	var searchbtn = MGJS.getElementsByClassName("button", "input", searchbox)[0];
+
+	var tiptext = "Type text to search here...";
+
+	if(searchtxt.value == "" || searchtxt.value == tiptext) {
+
+		searchtxt.className += " searchtip";
+
+		searchtxt.value = tiptext;
+
+	}
+
+	searchtxt.onfocus = function(e) {
+
+		if(searchtxt.value == tiptext) {
+
+			searchtxt.value = "";
+
+			searchtxt.className = searchtxt.className.replace(" searchtip", "");
+
+		}
+
+	}
+
+	searchtxt.onblur = function(e) {
+
+		if(searchtxt.value == "") {
+
+			searchtxt.className += " searchtip";
+
+			searchtxt.value = tiptext;
+
+		}
+
+	}
+
+	searchbtn.onclick = function(e) {
+
+		if(searchtxt.value == "" || searchtxt.value == tiptext) {
+
+			return false;
+
+		}
+
+	}
+
+//]]>
+
+</script>
+
+	<!-- searchbox END -->
+
+
+
+
+
+	<div class="fixed"></div>
+
+</div>
+
+<!-- header END -->
+
+
+
+<!-- navigation START -->
+
+<div id="navigation">
+
+	<!-- menus START -->
+
+	
+
+
+	<!-- menus END -->
+
+
+
+	
+
+
+
+	<div class="fixed"></div>
+
+</div>
+
+<!-- navigation END -->
+
+
+<!-- content START -->
+<div id="content">
+
+	<!-- main START -->
+	<div id="main">
+
+
+
+
+
+
+
+	<div id="postpath">
+
+		<a title="Go to homepage" href="http://www.9tut.com/">Home</a>
+
+		 
+		 &gt; Subnetting Tutorial – Subnetting Made Easy
+	</div>
+
+
+
+	<div class="post" id="post-850">
+
+		<h1>Subnetting Tutorial – Subnetting Made Easy</h1>
+
+		<div class="info">
+
+			<span class="date">September 28th, 2011</span>
+
+			
+
+			
+
+			
+
+			
+				<!-- <span class="addcomment"><a href="#respond">Leave a comment</a></span> -->
+
+				<span class="comments"><a href="http://www.9tut.com/subnetting-tutorial#comments">Go to comments</a></span>
+
+			
+			<div class="fixed"></div>
+
+		</div>
+
+		<div class="content">
+
+			<p>In this article, we will learn how to subnet and make subnetting an easy task.</p>
+<p>The table below summarizes the possible network numbers, the total number of each type, and the number of hosts in each Class A, B, and C network.</p>
+<table border="1">
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td><strong>Default subnet mask</strong></td>
+<td><strong>Range</strong></td>
+</tr>
+<tr>
+<td><strong>Class A</strong></td>
+<td>255.0.0.0 (/8)</td>
+<td>1.0.0.0 – 126.255.255.255</td>
+</tr>
+<tr>
+<td><strong>Class B</strong></td>
+<td>255.255.0.0 (/16)</td>
+<td>128.0.0.0 – 191.255.255.255</td>
+</tr>
+<tr>
+<td><strong>Class C</strong></td>
+<td>255.255.255.0 (/24)</td>
+<td>192.0.0.0 – 223.255.255.255</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: x-small;">Table 1 – Default subnet mask &amp; range of each class</span></p>
+<p>Class A addresses begin with a 0 bit. Therefore, all addresses from 1.0.0.0 to 126.255.255.255 belong to class A (1=<span style="text-decoration: underline;"><strong>0</strong></span>000 0001; 126 = <strong><span style="text-decoration: underline;">0</span></strong>111 1110).<br>
+ The 0.0.0.0 address is reserved for default routing and the 127.0.0.0 address is reserved for loopback testing so they don’t belong to any class.<br>
+ Class B addresses begin with a 1 bit and a 0 bit. Therefore, all addresses from 128.0.0.0 to 191.255.255.255 belong to class B (128=<span style="text-decoration: underline;"><strong>10</strong></span>00 0000; 191 = <span style="text-decoration: underline;"><strong>10</strong></span>11 1111). <br>
+ Class C addresses begin with two 1 bits and a 0 bit. Class C addresses range from 192.0.0.0 to 223.255.255.255 (192 = <span style="text-decoration: underline;"><strong>110</strong></span>0 0000; 223 = <span style="text-decoration: underline;"><strong>110</strong></span>1 1111).</p>
+<p>Class D &amp; E are used for Multicast and Research purposes and we are not allowed to subnet them so they are not mentioned here.</p>
+<p>Note: The number behind the slash notation (/) specifies how many bits are turned on (bit 1). For example:</p>
+<p>+ “/8” equals “1111 1111.0000 0000.0000 0000.0000 0000” -&gt; 8 bits are turned on (bit 1)<br>
+ + “/12” equals “1111 1111.1111 0000.0000 0000.0000 0000” -&gt; 12 bits are turned on (bit 1)<br>
+ + “/28” equals “1111 1111.1111 1111.1111 1111.1111 0000” -&gt; 28 bits are turned on (bit 1)<br>
+ + “/32” equals “1111 1111.1111 1111.1111 1111.1111 1111” -&gt; 32 bits are turned on (bit 1) and this is also the maximum value because all bits are turned on.</p>
+<p>The slash notation (following with a number) is equivalent to a subnet mask. If you know the slash notation you can figure out the subnet mask and vice versa. For example, “/8” is equivalent to “255.0.0.0”; “/12” is equivalent to “255.240.0.0”; “/28” is equivalent to “255.255.255.240”; “/32” is equivalent to “255.255.255.255”.</p>
+<p style="text-align: center;"><img src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/Class_A_B_C_network_host_portions.jpg" alt="Class_A_B_C_network_host_portions.jpg" width="415" height="205"></p>
+<p style="text-align: center;"><span style="font-size: x-small;">The Network &amp; Host parts of each class by default</span></p>
+<p style="text-align: left;">From the “default subnet mask” shown above, we can identify the network and host part of each class. Notice that in the subnet mask, bit 1 represents for Network part while bit 0 presents for Host part (255 equals to 1111 1111 and 0 equals to 0000 0000 in binary form).</p>
+<p><span id="more-850"></span></p>
+<p><!--adsense--></p>
+<p class="blueandbold">What is “subnetting”?</p>
+<p>When changing a number in the Network part of an IP address we will be in a different network from the previous address. For example, the IP address 11.0.0.1 belongs to class A and has a default subnet mask of 255.0.0.0; if we change the number in the first octet (a block of 8 bits, the first octet is the leftmost 8 bits) we will create a different network. For example, <span style="text-decoration: underline;">12</span>.0.0.1 is in a different network from <span style="text-decoration: underline;">11</span>.0.0.1. But if we change a number in the Host part, we are still in the same Network. For example, 11.<span style="text-decoration: underline;">1</span>.0.1 is in the same network of 11.<span style="text-decoration: underline;">0</span>.0.1.</p>
+<p>The problem here is if we want to create 300 networks how can we do that? In the above example, we can only create different networks when changing the first octet so we can create a maximum of 255 networks because the first octet can only range from 1 to 255 (in fact it is much smaller because class A only range from 1 to 126). Now we have to use a technique called “subnetting” to achieve our purpose.</p>
+<p>“Subnetting” means we <strong>borrow some bits from the Host part to add to the Network part</strong>. This allows us to have more networks than using the default subnet mask. For example, we can borrow some bits in the next octet to make the address 11.1.0.1 belong to a different network from 11.0.0.1.</p>
+<p><span class="blueandbold">How to subnet?</span></p>
+<p>Do you remember that I said “in the subnet mask, bit 1 represents for Network part while bit 0 presents for Host part”? Well, this also means that we can specify how many bits we want to borrow by changing how many bit 0 to bit 1 in the subnet mask.</p>
+<p><!--adsense#MiddleContent--></p>
+<p>Let’s come back to our example with the IP 11.0.0.1, we will write all numbers in binary form to reveal what a computer really sees in an IP address.</p>
+<p style="text-align: center;"><img src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/Class_A_binary_form.jpg" alt="Class_A_binary_form.jpg" width="475" height="160"></p>
+<p>Now you can clearly see that the subnet mask will decide which is the Network part, which is the Host part. By borrowing 8 bits, our subnet mask will be like this:</p>
+<p style="text-align: center;"><img src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/Class_A_subnet_binary_form.jpg" alt="Class_A_subnet_binary_form.jpg" width="495" height="160"></p>
+<p>After changing the second octet of the subnet mask from all “0” to all “1”, the Network part is now extended. Now we can create new networks by changing number in the first or second octet. This greatly increases the number of networks we can create. With this new subnet mask, IP 11.<span style="text-decoration: underline;">1</span>.0.1 is in different network from IP 11.<span style="text-decoration: underline;">0</span>.0.1 because “1” in the second octet now belongs to the Network part.</p>
+<p>So, in conclusion we “subnet” by borrowing bit “0” in the Host portion and converting them to bit “1”. The number of borrowed bits is depended on how many networks we need.</p>
+<p>Note: A rule of borrowing bits is we can only borrow bit 0 from the left to the right without skipping any bit 0. For example, you can borrow like this: “1111 1111. 1100 0000.0000 0000.0000 0000” but not this: “1111 1111. 1010 0000.0000 0000.0000 0000”. In general, just make sure all your bit “1”s are successive on the left and all your bit “0”s are successive on the right.</p>
+<p>In the next part we will learn how to calculate the number of sub-networks and hosts-per-subnet</p>
+<p><!--adsense--></p>
+<p>
+			</p><div class="page-link">Pages: 1 <a href="http://www.9tut.com/subnetting-tutorial/2">2</a> <a href="http://www.9tut.com/subnetting-tutorial/3">3</a></div>
+			<div class="fixed"></div>
+
+		</div>
+
+		<!-- <div class="under">
+
+			
+
+			<span class="tags"></span><span></span>
+		</div> -->
+
+	</div>
+
+
+
+	<!-- related posts START -->
+
+	
+	<!-- related posts END -->
+
+
+
+	<script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/comment.js"></script>
+
+
+
+<div id="comments">
+<div id="cmtswitcher">
+			<a id="commenttab" class="curtab" href="javascript:void(0);">Comments (12)</a>
+				<span class="addcomment">Comments</span>
+	
+	<div class="fixed"></div>
+</div>
+
+
+
+		<div id="commentnavi">
+			<span class="pages">Comment pages</span>
+			<div id="commentpager">
+				<a class="prev page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-5#comments">« Previous</a>
+<a class="page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-1#comments">1</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-4#comments">4</a>
+<a class="page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-5#comments">5</a>
+<span class="page-numbers current">6</span>				<span id="cp_post_id">850</span>
+			</div>
+			<div class="fixed"></div>
+		</div>
+<div id="commentlist">
+	<!-- comments START -->
+	<ol id="thecomments">
+		<li class="comment regularcomment" id="comment-3362833">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				khaloood		</div>
+			<div class="date">
+				December 3rd, 2016					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3362833', 'comment-3362833', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3362833', 'comment-3362833', 'commentbody-3362833', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3362833">
+					<p>thank you very much</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3368075">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				Anonymous		</div>
+			<div class="date">
+				December 18th, 2016					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3368075', 'comment-3368075', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3368075', 'comment-3368075', 'commentbody-3368075', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3368075">
+					<p>thnx for all</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3368895">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				Anonymous		</div>
+			<div class="date">
+				December 20th, 2016					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3368895', 'comment-3368895', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3368895', 'comment-3368895', 'commentbody-3368895', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3368895">
+					<p>There are 500 hosts in a local-network which has no external connection. Due to some administrative requirements the network should be configured to run in five different groups. Such that in each group there will be 100 hosts. However, host should be able to communicate with all the other hosts in its group, but should not be able to communicate with the hosts in other groups. That is to say, each host should perceive the network as if only its group members (199 member hosts) are sharing the network. The network infrastructure is star-type (with switches), fixed (can not be altered). Logical design of the network is shown in the figure below.</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3368896">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				Anonymous		</div>
+			<div class="date">
+				December 20th, 2016					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3368896', 'comment-3368896', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3368896', 'comment-3368896', 'commentbody-3368896', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3368896">
+					<p>There are 500 hosts in a local-network which has no external connection. Due to some administrative requirements the network should be configured to run in five different groups. Such that in each group there will be 100 hosts. However, host should be able to communicate with all the other hosts in its group, but should not be able to communicate with the hosts in other groups. That is to say, each host should perceive the network as if only its group members (99 member hosts) are sharing the network. The network infrastructure is star-type (with switches), fixed (can not be altered). Logical design of the network is shown in the figure below.</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3368898">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				Anonymous		</div>
+			<div class="date">
+				December 20th, 2016					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3368898', 'comment-3368898', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3368898', 'comment-3368898', 'commentbody-3368898', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3368898">
+					<p>2.	There are 500 hosts in a local-network which has no external connection. Due to some administrative requirements the network should be configured to run in five different groups. Such that in each group there will be 100 hosts. However, host should be able to communicate with all the other hosts in its group, but should not be able to communicate with the hosts in other groups. That is to say, each host should perceive the network as if only its group members (99 member hosts) are sharing the network. The network infrastructure is star-type (with switches), fixed (can not be altered). Logical design of the network is shown in the figure below.</p>
+<p>Propose a network-layer solution for the problem stated above andclearly explain the solution.</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3369683">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				TRAP		</div>
+			<div class="date">
+				December 23rd, 2016					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3369683', 'comment-3369683', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3369683', 'comment-3369683', 'commentbody-3369683', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3369683">
+					<p>OK</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3373003">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				oahu4me		</div>
+			<div class="date">
+				January 3rd, 2017					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3373003', 'comment-3373003', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3373003', 'comment-3373003', 'commentbody-3373003', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3373003">
+					<p>I’d like to get the latest dumps to use as a guide for study.  If anyone has recently taken exam, please let me know what sims they are using also. Please send me the latest dumps.  Thank You     {email not allowed}</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3373005">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				oahu4me		</div>
+			<div class="date">
+				January 3rd, 2017					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3373005', 'comment-3373005', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3373005', 'comment-3373005', 'commentbody-3373005', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3373005">
+					<p>Please send latest CCNA dumps for study guide and what sims are recent.   oahu4me at yahoo.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3375410">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				Siya		</div>
+			<div class="date">
+				January 11th, 2017					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3375410', 'comment-3375410', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3375410', 'comment-3375410', 'commentbody-3375410', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3375410">
+					<p>Hi guys, if possible can you please send me CCNA 200-125 dumps, email: siya.nxuseka at gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3376105">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				Master		</div>
+			<div class="date">
+				January 14th, 2017					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3376105', 'comment-3376105', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3376105', 'comment-3376105', 'commentbody-3376105', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3376105">
+					<p>Please send me the latest dumps off CCNA. email sofi.moomin20 at gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3378019">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				qweqweq		</div>
+			<div class="date">
+				January 24th, 2017					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3378019', 'comment-3378019', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3378019', 'comment-3378019', 'commentbody-3378019', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3378019">
+					<p>nice</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	<li class="comment regularcomment" id="comment-3382847">
+		
+
+		<div class="info">
+		
+		<div class="author">
+			<!-- <div class="pic">
+							</div> -->
+				JM		</div>
+			<div class="date">
+				February 15th, 2017					 
+			</div>
+			<div class="act">
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.reply('commentauthor-3382847', 'comment-3382847', 'comment');">Reply</a>  -->
+				<!-- <a href="javascript:void(0);" onclick="MGJS_CMT.quote('commentauthor-3382847', 'comment-3382847', 'commentbody-3382847', 'comment');">Quote</a> -->
+							</div>
+			<div class="smallspace"></div>
+			<div class="content">
+				
+				<div id="commentbody-3382847">
+					<p>Instead of asking for CCNA dumps, try studying the literature.</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed"></div>
+
+</li><!-- #comment-## -->
+	</ol>
+	<!-- comments END -->
+
+		<div id="commentnavi">
+			<span class="pages">Comment pages</span>
+			<div id="commentpager">
+				<a class="prev page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-5#comments">« Previous</a>
+<a class="page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-1#comments">1</a>
+<span class="page-numbers dots">…</span>
+<a class="page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-4#comments">4</a>
+<a class="page-numbers" href="http://www.9tut.com/subnetting-tutorial/comment-page-5#comments">5</a>
+<span class="page-numbers current">6</span>				<span id="cp_post_id">850</span>
+			</div>
+			<div class="fixed"></div>
+		</div>
+
+	<!-- trackbacks START -->
+		<div class="fixed"></div>
+	<!-- trackbacks END -->
+</div>
+
+</div>
+
+	<form action="http://www.9tut.com/wp-comments-post.php" method="post" id="commentform">
+	<div id="respond">
+<div class="addnewcomment">Add a Comment</div>
+					
+			<div id="author_info">
+				<div class="row">
+					<input type="text" name="author" id="author" class="textfield" placeholder="Nickname (Please don&#39;t use real name)" value="" size="24" tabindex="1">
+					<label for="author" class="small"> </label>
+				</div>		
+			</div>
+			
+		
+		<!-- comment input -->
+		<div class="row">
+			 
+			<textarea name="comment" id="comment" tabindex="4" rows="8" cols="50"></textarea>
+					</div>
+
+		<!-- comment submit and rss -->
+		<div id="submitbox">
+			<div class="submitbutton">
+				<input name="submit" type="submit" id="submit" class="button" tabindex="5" value="Submit Comment">
+			</div>
+			<a class="feed" href="http://www.9tut.com/comments/feed">Subscribe to comments feed</a>
+			
+						<input type="hidden" name="comment_post_ID" value="850">
+			<div class="fixed"></div>
+		</div>
+
+	</div>
+	<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="535d3decad"></p><p style="display: none;"></p>	<input type="hidden" id="ak_js" name="ak_js" value="1487578478151"></form>
+
+	
+
+
+
+	<div id="postnavi">
+
+		<span class="prev"><a href="http://www.9tut.com/ccna-protocols-services" rel="next">CCNA – Protocols &amp; Services</a></span>
+
+		<span class="next"><a href="http://www.9tut.com/frame-relay-tutorial" rel="prev">Frame Relay Tutorial</a></span>
+
+		<div class="fixed"></div>
+
+	</div>
+
+
+
+
+
+
+	</div>
+	<!-- main END -->
+
+	
+<!-- sidebar START -->
+<div id="sidebar">
+<!-- sidebar north START -->
+<div id="northsidebar" class="sidebar">
+
+		<!-- showcase -->
+
+	<div id="am4login-3" class="widget widget_text"><h3></h3><h3>Premium Membership</h3>
+<p class="becomemember">Become a member to interact with all questions and read all tutorials, labs!</p>
+				<br>
+				<p align="center"><img width="128" border="0" height="128" alt="package_favourite" align="center" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/app_file-manager.png"></p>
+				<p class="findoutmore" align="center"><a href="http://www.9tut.com/we-want-to-write-more">Find out more</a> or <a href="http://www.9tut.com/member/login">Sign In</a></p>
+</div>
+</div>
+<!-- sidebar north END -->
+
+<div id="centersidebar">
+
+	<!-- sidebar east START -->
+	<div id="eastsidebar" class="sidebar">
+	
+		<!-- categories -->
+		<div class="widget widget_categories">
+			<h2>CCNA 200-125</h2>
+			<ul> 
+	<li class="cat-item cat-item-8"><a href="http://www.9tut.com/category/ccna-lab-sim">CCNA Lab Sim</a>
+</li>
+												<li><a href="http://www.9tut.com/ccna-faqs-a-tips">
+          	CCNA FAQs &amp; Tips          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/basic-questions">
+          	Basic Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/osi-model-questions">
+          	OSI TCP/IP Model Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/wan-questions">
+          	WAN Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ppp-questions">
+          	PPP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/pppoe-questions">
+          	PPPoE Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/mpls-questions">
+          	MPLS Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/dmvpn-questions">
+          	DMVPN Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/cdp-lldp-questions">
+          	CDP &amp; LLDP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ip-address-questions">
+          	IP Address Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/switch-questions">
+          	Switch Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/vlan-questions">
+          	VLAN Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/trunking-questions">
+          	Trunking Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/stp-questions">
+          	STP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/rstp-questions">
+          	RSTP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/vtp-questions">
+          	VTP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/port-security-questions">
+          	Port Security Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/span-questions">
+          	SPAN Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/etherchannel-questions">
+          	EtherChannel Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/intervlan-routing">
+          	InterVLAN Routing          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/router-questions">
+          	Router Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/access-list-questions">
+          	Access list Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ip-routing">
+          	IP Routing          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/subnetting-questions">
+          	Subnetting Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/rip-questions">
+          	RIP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ospf-questions">
+          	OSPF Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/eigrp-questions">
+          	EIGRP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/bgp-questions">
+          	BGP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ip-sla-questions">
+          	IP SLA Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/natpat-questions">
+          	NAT/PAT Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/hsrp-questions">
+          	HSRP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ipv6-questions">
+          	IPv6 Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ipv6-questions-2">
+          	IPv6 Questions 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/security-questions">
+          	Security Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/troubleshooting-questions">
+          	Troubleshooting Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/dhcp-questions">
+          	DHCP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/syslog-questions">
+          	Syslog Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/snmp-questions">
+          	SNMP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/ntp-questions">
+          	NTP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/sdn-solution">
+          	SDN Solution          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/wireless-questions">
+          	Wireless Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/miscellaneous-questions">
+          	Miscellaneous Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/drag-and-drop">
+          	Drag and Drop          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/share-your-ccna-v3-0-experience">
+          	Share your CCNA v3.0 Experience          	</a>  </li>         
+        				</ul>
+		</div>
+		<br>
+		<div class="widget widget_categories">
+			<h2>CCNA 200-120</h2>
+			<ul> 
+												<li><a href="http://www.9tut.com/new-ccna-basic-questions">
+          	CCNA – Basic Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-osi-tcpip-model">
+          	CCNA – OSI &amp; TCP/IP Model          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-ios-questions">
+          	CCNA – IOS Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-wan-questions">
+          	CCNA – WAN Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-switch-questions">
+          	CCNA – Switch Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-switch-questions-2">
+          	CCNA – Switch Questions 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-vlan-questions">
+          	CCNA – VLAN Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-trunking-questions">
+          	CCNA – Trunking Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-trunking-questions-2">
+          	CCNA – Trunking Questions 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-etherchannel">
+          	CCNA – EtherChannel          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-intervlan-questions">
+          	CCNA – InterVLAN Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-stp">
+          	CCNA – STP          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-stp-2">
+          	CCNA – STP 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-rstp">
+          	CCNA – RSTP          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-access-list-questions">
+          	CCNA – Access list Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-subnetting">
+          	CCNA – Subnetting          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-subnetting-2">
+          	CCNA – Subnetting 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-ip-routing-questions">
+          	CCNA – IP Routing Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-ip-routing-2">
+          	CCNA – IP Routing 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-frame-relay">
+          	CCNA – Frame Relay          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-frame-relay-2">
+          	CCNA – Frame Relay 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-nat-pat-questions">
+          	CCNA – NAT PAT Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-ospf-questions">
+          	CCNA – OSPF Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-ospf-questions-2">
+          	CCNA – OSPF Questions 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-eigrp-questions">
+          	CCNA – EIGRP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-dhcp-questions">
+          	CCNA – DHCP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-hsrp-vrrp-glbp">
+          	CCNA – HSRP VRRP GLBP          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-snmp-questions">
+          	CCNA – SNMP Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-netflow-questions">
+          	CCNA – NetFlow Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-syslog-questions">
+          	CCNA – Syslog Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-security-questions">
+          	CCNA – Security Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-operation-questions">
+          	CCNA – Operation Questions          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-operation-2">
+          	CCNA – Operation 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-show-commands">
+          	CCNA – Show commands          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-troubleshooting">
+          	CCNA – Troubleshooting          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-ipv6">
+          	CCNA – IPv6          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-ipv6-questions-2">
+          	CCNA – IPv6 Questions 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-drag-and-drop-1">
+          	CCNA – Drag and Drop 1          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-drag-and-drop-2">
+          	CCNA – Drag and Drop 2          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-drag-and-drop-3">
+          	CCNA – Drag and Drop 3          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-drag-and-drop-4">
+          	CCNA – Drag and Drop 4          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/new-ccna-drag-and-drop-5">
+          	CCNA – Drag and Drop 5          	</a>  </li>         
+        							<li><a href="http://www.9tut.com/share-your-new-ccna-experience">
+          	Share your CCNA Experience          	</a>  </li>         
+        				</ul>
+		</div>
+		<br>
+		<div class="widget widget_categories">
+			<h2>CCNA Self-Study</h2>
+						<ul> 
+			<li class="cat-item cat-item-11"><a href="http://www.9tut.com/category/practice-ccna-gns3-labs">Practice CCNA GNS3 Labs</a>
+</li>
+			<li class="active_post"> 	<a href="http://www.9tut.com/category/ccna-knowledge">CCNA Knowledge</a><br>
+ </li>
+			<li class="cat-item cat-item-19"><a href="http://www.9tut.com/category/ccna-lab-challenges">CCNA Lab Challenges</a>
+</li>
+		</ul>
+		</div>
+	<br>
+	</div>
+
+		<div class="widget widget_categories">
+
+			<h2>Network Resources</h2>
+
+			<ul> 
+
+
+			 	
+			<li class="cat-item"><a href="http://www.9tut.com/free-router-simulators">Free Router Simulators
+						</a></li></ul><a href="http://www.9tut.com/free-router-simulators">
+		</a></div><a href="http://www.9tut.com/free-router-simulators">
+		</a><ul><a href="http://www.9tut.com/free-router-simulators"></a><li class="cat-item"><a href="http://www.9tut.com/free-router-simulators"></a><a href="http://www.9tut.net/" target="_blank">ICND1/ICND2 Website</a></li></ul>
+		<ul><li class="cat-item"><a href="http://www.digitaltut.com/" target="_blank">CCNP - ROUTE Website</a></li></ul>
+		<ul><li class="cat-item"><a href="http://www.certprepare.com/" target="_blank">CCNP - SWITCH Website</a></li></ul>
+		<ul><li class="cat-item"><a href="http://www.networktut.com/" target="_blank">CCNP - TSHOOT Website</a></li></ul>	
+		<ul><li class="cat-item"><a href="http://www.securitytut.com/" target="_blank">CCNA Security Website</a></li></ul>
+		<ul><li class="cat-item"><a href="http://www.voicetut.com/" target="_blank">CCNA Voice Website</a></li></ul>	
+		<ul><li class="cat-item"><a href="http://www.wirelesstut.com/" target="_blank">CCNA Wireless Website</a></li></ul>
+		<ul><li class="cat-item"><a href="http://www.rstut.com/" target="_blank">CCIE Website</a></li></ul>				
+	</div>
+	<!-- sidebar east END -->
+
+	<!-- sidebar west START -->
+
+
+
+	<div id="westsidebar" class="sidebar">
+
+
+
+	
+
+		</div>
+
+	<!-- sidebar west END -->
+
+	<div class="fixed"></div>
+
+
+<br>
+
+<br>
+
+</div>
+<!-- sidebar END -->
+
+
+
+	<div class="fixed"></div>
+</div>
+<!-- content END -->
+
+<!-- footer START -->
+<div id="footer">
+	<a id="gotop" href="http://www.9tut.com/subnetting-tutorial#" onclick="MGJS.goTop();return false;">Top</a>
+	<div id="footer_logo"><img width="60" height="60" border="0" alt="footer" title="footer" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/networking.png"></div>
+	<div id="copyright">
+		Copyright © 2016 CCNA Training	</div>
+	<div id="themeinfo">
+		<a href="http://www.9tut.com/privacy-policy">Site Privacy Policy</a>. Valid XHTML 1.1 and CSS 3.BH	</div>
+</div>
+<!-- footer END -->
+
+</div>
+<!-- container END -->
+</div>
+<!-- wrap END -->
+
+<script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/form.js"></script>
+<script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/vertical_tabs.js"></script>
+<script type="text/javascript" src="./CCNA Training » Subnetting Tutorial – Subnetting Made Easy_files/wp-embed.min.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2141052-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+</body></html>
